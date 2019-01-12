@@ -192,7 +192,6 @@ class NewInputDialog extends Component {
               onChange={this.handleValueChange('options')}
               margin="none"
               fullWidth
-              margin="normal"
             />
           ) : null}
 

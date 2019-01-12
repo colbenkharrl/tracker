@@ -6,8 +6,6 @@ import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import TextField from '@material-ui/core/TextField';
 
-import { APP_NAME } from '../../constants.js';
-
 const styles = theme => ({
   loginPaper: {
     padding: 10,

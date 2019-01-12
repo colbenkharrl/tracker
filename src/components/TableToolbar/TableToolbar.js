@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import {
   Checkbox,
   FormControlLabel,
-  Icon,
   IconButton,
   InputAdornment,
   Menu,
@@ -10,7 +9,6 @@ import {
   TextField,
   Toolbar,
   Tooltip,
-  Typography,
   withStyles,
 } from '@material-ui/core';
 import { lighten } from '@material-ui/core/styles/colorManipulator';
@@ -178,11 +176,7 @@ class TableToolbar extends React.Component {
 
   render() {
     const { classes } = this.props;
-    const localization = { ...TableToolbar.defaultProps.localization, ...this.props.localization };
-    const title =
-      this.props.selectedRows && this.props.selectedRows.length > 0
-        ? localization.nRowsSelected.replace('{0}', this.props.selectedRows.length)
-        : this.props.title;
+
     return (
       <Toolbar
         className={classNames(classes.root, {

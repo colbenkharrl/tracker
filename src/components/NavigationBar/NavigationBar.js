@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { APP_NAME } from '../../constants.js';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
@@ -50,7 +50,7 @@ class NavigationBar extends Component {
 
   render() {
     const { classes } = this.props;
-    const { auth, redirect } = this.state;
+    const { redirect } = this.state;
 
     if (redirect) {
       this.state.redirect = null;
